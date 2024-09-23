@@ -112,6 +112,14 @@ git pull origin
 
 ## Advanced Skills
 
+### Delete Push
+
+```zsh
+git push -d "Remote Name" "Branch Name"
+```
+
+원격에 브랜치를 푸시가 되어있는 상황에서, 푸시를 제거하고 싶을 때 수행하는 명령어입니다.
+
 ### Stash (임시저장)
 
 > `git stash` 명령어는 현재 작업하던 브랜치에서 다른 브랜치로 전환하는데, 변경사항들을 임시저장하고 넘어가려고 할 때 사용합니다.
