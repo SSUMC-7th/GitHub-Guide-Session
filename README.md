@@ -40,6 +40,12 @@ git log
 git branch
 ```
 
+로컬에서 사용 중인 브랜치를 확인하는 명령어
+
+```zsh
+git branch --remote
+```
+
 원격 레포지토리에서 사용 중인 브랜치를 확인하는 명령어
 
 ```zsh
@@ -127,6 +133,31 @@ git push -d "Remote Name" "Branch Name"
 ```
 
 원격에 브랜치를 푸시가 되어있는 상황에서, 푸시를 제거하고 싶을 때 수행하는 명령어입니다.
+
+### Fetch
+
+`pull`과 `fetch`의 가장 큰 차이점은 원격의 사항들을 가져와서 로컬에 자동으로 적용한다는 점 입니다.
+1. `git fetch` 명령어를 실행하면 레포지토리에 있는 변경사항들을 `origin/branch`으로 가져옵니다.
+2. `origin/branch`에 가져온 변경사항들을 `branch`에 적용합니다.
+
+즉 정리하자면, `git pull`로 수행되는 동작을 `git fetch`와 `git merge`로 두 단계를 거쳐서 진행합니다.
+
+그렇다면 해당 작업을 왜 사용하는가?
+
+- 더욱 세부적으로 원격에 있는 변경사항을 적용할 수 있습니다.
+- 다른 로컬 브랜치에 번경사항을 적용할 수 있습니다.
+  - 예를 들어 `A`라는 브랜치로 원격에 있는 `origin/A`의 변경사항을 적용할 수 있는 상황입니다.
+  - 여기서 `B`라는 브랜치에도 `origin/A`를 적용할 수 있습니다.
+
+즉, 더욱 세부적으로 작업할 수 있습니다.
+
+```zsh
+git fetch origin
+```
+
+```zsh
+git merge origin/"fetched branch name"
+```
 
 ### Stash (임시저장)
 
