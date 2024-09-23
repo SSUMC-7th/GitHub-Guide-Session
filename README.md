@@ -26,6 +26,14 @@ git commit
 
 `git commit`을 CLI에 입력하고 나면, vi 편집기를 사용한 편집모드에 들어가게 된다.
 
+### Log
+
+```zsh
+git log
+```
+
+과거 버전을 확인할 수 있습니다.
+
 ### Branch
 
 ```zsh
