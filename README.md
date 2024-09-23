@@ -111,3 +111,93 @@ git pull origin
 ```
 
 ## Advanced Skills
+
+### Stash (임시저장)
+
+> `git stash` 명령어는 현재 작업하던 브랜치에서 다른 브랜치로 전환하는데, 변경사항들을 임시저장하고 넘어가려고 할 때 사용합니다.
+
+```zsh
+git stash
+```
+
+작업 중인 항목들을 임시저장합니다.
+
+```zsh
+git stash push -m "임시저장 타이틀"
+```
+
+작업 중인 항목들을 임시저장하는데, 임시저장 타이틀을 지정할 수 있습니다.
+
+```zsh
+git stash list
+```
+
+임시저장된 변경사항들의 리스트를 보여줍니다.
+
+```zsh
+git stash apply stash@{항목번호}
+```
+
+임시저장된 항목 중 하나를 선택하여 저장합니다.
+
+### Amend
+
+> `git amend` 명령어는 가장 최근의 커밋 메시지를 수정합니다.
+
+```zsh
+git commit --amend
+```
+
+가장 최근 커밋 메시지를 수정하는 vi 모드로 진입합니다.
+
+```zsh
+git commit --amend --no-edit
+```
+
+커밋 메시지 수정 없이, 현재 stage한 항목을 이전 커밋에 넣습니다.
+
+### HEAD
+
+HEAD의 개념
+1. HEAD는 일종의 포인터입니다.
+2. 터미널에서 현재 상태로 보여지는 값을 HEAD라고 합니다.
+
+### Checkout into Hash
+
+```zsh
+git commit checkout "commit hash"
+```
+
+과거 버전으로 돌아갑니다.
+
+### Merge Conflict Resolve Editor & GUI Tools
+
+- [GitKraken](https://www.gitkraken.com/)
+- VSCode Extensions
+  - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+  - [GitHub Pull Requests](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)
+
+### PR 병합 간 충돌을 줄일 수 있는 팁
+
+> develop 브랜치로 내가 작업 중인 feat/#7 브랜치를 병합하려고 가정을 해봅시다.
+
+`feat/#7` 브랜치를 원격으로 업로드 하기 전에 가장 최신의 `develop` 브랜치를 `feat/#7` 브랜치로 병합합니다.
+
+```zsh
+git checkout feat/#7
+
+git merge develop
+```
+
+이렇게 했을 때의 이점이 무엇이냐?
+
+- 로컬에서 미리 충돌을 잡고 원격으로 업로드 하기 때문에, 충돌이 발생한다는 불필요한 상황을 미리 해결할 수 있음.
+- GitHub에서 웹브라우저에서 충돌을 잡을 수 있는 도구도 있지만, 로컬에서 사용할 수 있는 도구가 훨씬 더 강력해서 개발자의 피로도를 줄일 수 있음.
+
+### Cherry Pick
+
+과거의 커밋들을 현재 작업 중인 브랜치에 비선형적으로 적용할 수 있다.
+
+```zsh
+git cherry-pick "커밋해시"
+```
