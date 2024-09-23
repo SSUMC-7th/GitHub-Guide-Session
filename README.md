@@ -248,3 +248,21 @@ git merge develop
 ```zsh
 git cherry-pick "커밋해시"
 ```
+
+### Tag
+
+오픈소스로 사용할 수 있는 레포지토리의 버전을 관리할 수 있습니다. \
+태그는 일종의 브랜치와 같이 사용할 수 있습니다. \
+`checkout` 명령어도 사용가능합니다.
+
+```zsh
+git tag x.x.x
+```
+
+```zsh
+git push origin x.x.x
+```
+
+```zsh
+git push -d origin x.x.x
+```
