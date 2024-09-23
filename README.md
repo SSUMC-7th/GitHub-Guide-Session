@@ -88,4 +88,26 @@ git merge "Branch B"
 
 "Branch B"의 변경사항을 병합하는 명령어
 
+### Pull Request
+
+> Pull Request는 git의 기능이 아니고, GitHub의 기능입니다. \
+> D 브랜치의 작업사항을 C 브랜치에 병합을 하고 싶은 상황에서, 팀원들과 변경사항을 공유해야 하는 시나리오가 빈번합니다. \
+> `develop` 브랜치에 개발자 개별 작업 브랜치의 변경사항을 병합해야 하는 상황을 앞으로 개발하면서 많이 마주하게 될 것 입니다.
+
+```zsh
+git checkout D
+
+git push origin
+```
+
+- GitHub Pull Request에서 PR을 개설합니다.
+- C 브랜치에 병합합니다. 이 때 병합은 원격 레포지토리의 C 브랜치(origin/c)에 병합이 되어 있습니다.
+- 변경된 origin/c 브랜치의 변경 사항을 로컬로 `pull` 받아옵니다.
+
+```zsh
+git checkout C
+
+git pull origin
+```
+
 ## Advanced Skills
