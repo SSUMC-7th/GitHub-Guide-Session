@@ -1,0 +1,79 @@
+Last login: Thu Sep 26 18:42:59 on ttys000
+(base) yujihun@yujihun-ui-MacBookAir ~ % cd GitHub-Guide-Session
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % git checkout JihuN126
+error: pathspec 'JihuN126' did not match any file(s) known to git
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % ls 
+README.md
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % cd GitHun-Guide-Session
+cd: no such file or directory: GitHun-Guide-Session
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % git pull
+remote: Enumerating objects: 54, done.
+remote: Counting objects: 100% (54/54), done.
+remote: Compressing objects: 100% (32/32), done.
+remote: Total 53 (delta 11), reused 51 (delta 9), pack-reused 0 (from 0)
+Unpacking objects: 100% (53/53), 6.51 KiB | 190.00 KiB/s, done.
+From https://github.com/SSUMC-7th/GitHub-Guide-Session
+   bc5d570..4851ca5  main          -> origin/main
+ * [new branch]      CHOYNUSIG     -> origin/CHOYNUSIG
+ * [new branch]      DeoKanKoong   -> origin/DeoKanKoong
+ * [new branch]      Ean           -> origin/Ean
+ * [new branch]      Hwang_ios     -> origin/Hwang_ios
+ * [new branch]      Jangwon0319   -> origin/Jangwon0319
+ * [new branch]      JihuN126      -> origin/JihuN126
+ * [new branch]      S0NGMinHyuk   -> origin/S0NGMinHyuk
+ * [new branch]      alswjdghks    -> origin/alswjdghks
+ * [new branch]      bingseok      -> origin/bingseok
+ * [new branch]      chocho        -> origin/chocho
+ * [new branch]      geumjoon0925  -> origin/geumjoon0925
+ * [new branch]      hello-umc-7th -> origin/hello-umc-7th
+ * [new branch]      ike           -> origin/ike
+ * [new branch]      jett_branch   -> origin/jett_branch
+ * [new branch]      joy           -> origin/joy
+ * [new branch]      junseoplee    -> origin/junseoplee
+ * [new branch]      mlnls         -> origin/mlnls
+ * [new branch]      rudeore-098   -> origin/rudeore-098
+ * [new branch]      sohyunlee0102 -> origin/sohyunlee0102
+Updating bc5d570..4851ca5
+Fast-forward
+ .DS_Store | Bin 0 -> 6148 bytes
+ Hello.c   |   6 ++++++
+ 2 files changed, 6 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 Hello.c
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % git checkout JihuN126
+branch 'JihuN126' set up to track 'origin/JihuN126'.
+Switched to a new branch 'JihuN126'
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % git clone https://github.com/SSUMC-7th/GitHub-Guide-Session.git
+Cloning into 'GitHub-Guide-Session'...
+remote: Enumerating objects: 84, done.
+remote: Counting objects: 100% (84/84), done.
+remote: Compressing objects: 100% (56/56), done.
+remote: Total 84 (delta 21), reused 78 (delta 15), pack-reused 0 (from 0)
+Receiving objects: 100% (84/84), 13.14 KiB | 4.38 MiB/s, done.
+Resolving deltas: 100% (21/21), done.
+(base) yujihun@yujihun-ui-MacBookAir GitHub-Guide-Session % vi hello.py
+
+print("Hello world")
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+-- INSERT --
